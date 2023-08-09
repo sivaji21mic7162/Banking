@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dashboard.css">
+    <title>Banking App - Dashboard</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 0;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            padding: 0;
+        }
+
+        nav li {
+            margin: 0 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        .dashboard-container {
+            max-width: 800px;
+            margin: 40px auto;
+            background-color: #ffffff;
+            padding: 20px;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+
+        .dashboard-container h1 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        .account-summary, .transaction-history {
+            margin-bottom: 30px;
+        }
+
+        .account-summary h2, .transaction-history h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .transaction-history ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .transaction-history li {
+            margin-bottom: 10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #333;
+            color: white;
+        }
+
+    </style>
+
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="logout.html">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="dashboard-container">
+        <h1>Welcome to Your Dashboard</h1>
+        <div class="account-summary">
+            <h2>Account Summary</h2>
+            <p>Account Balance: $10,000</p>
+            <p>Last Transaction: $500 (Credit)</p>
+        </div>
+        <div class="transaction-history">
+            <h2>Transaction History</h2>
+            <ul>
+                <li>08/01/2023 - $200 (Debit)</li>
+                <li>07/28/2023 - $1000 (Credit)</li>
+                <li>07/20/2023 - $50 (Debit)</li>
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Banking App. All rights reserved.</p>
+    </footer>
+</body>
+</html>
